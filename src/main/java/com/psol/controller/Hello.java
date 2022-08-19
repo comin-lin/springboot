@@ -22,4 +22,6 @@ public class Hello {
     }
     @RequestMapping("/github")
     public String handle02(){return "hello,github";}
+    @RequestMapping("/github2")
+    public String handle03(){return "hello,github2";}
 }
