@@ -20,4 +20,6 @@ public class Hello {
     public String handle01(){
         return "hello,spring boot";
     }
+    @RequestMapping("/github")
+    public String handle02(){return "hello,github";}
 }
