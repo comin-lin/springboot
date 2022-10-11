@@ -18,20 +18,22 @@ public class maintest {
         //获取IOC容器
         ConfigurableApplicationContext run=SpringApplication.run(maintest.class,args);
 
-        //查看容器中的组件
-        String[] names=run.getBeanDefinitionNames();
-        for(String name : names){
-            System.out.println(name);
-        }
 
-        //从容器中获取组件
-        User user = run.getBean("user01",User.class);
-        System.out.println(user);
 
-        //由于配置类本身也是组件，可以获取配置类，再通过调用配置类中的方法获取组件
-        myconfig bean=run.getBean(myconfig.class);
-        User user2=bean.user01();
-        System.out.println(user2);
+//        //查看容器中的组件
+//        String[] names=run.getBeanDefinitionNames();
+//        for(String name : names){
+//            System.out.println(name);
+//        }
+//
+//        //从容器中获取组件
+//        User user = run.getBean("user01",User.class);
+//        System.out.println(user);
+//
+//        //由于配置类本身也是组件，可以获取配置类，再通过调用配置类中的方法获取组件
+//        myconfig bean=run.getBean(myconfig.class);
+//        User user2=bean.user01();
+//        System.out.println(user2);
 
     }
 }
