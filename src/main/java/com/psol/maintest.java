@@ -41,6 +41,7 @@ public class maintest {
 
 
 /*
+localhost:
 springboot不仅拥有依赖管理的特性，帮助开发者管理各种依赖项的版本，springboot还有自动配置的特性：
 
 自动装配好springMVC，引入全套组件并装配
